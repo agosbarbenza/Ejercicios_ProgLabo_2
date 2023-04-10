@@ -9,9 +9,24 @@ namespace Teoria_Ejemplos_Clases
             /*int numero = 2;
             int resultado = Math.ElevarAlCuadrado(numero);
             Console.WriteLine(resultado);*/
-            Persona p = new Persona("Agostina", "Bar", 123456);
+            Persona p1 = new Persona("Agostina", "Bar", 666);
+            Persona p2 = new Persona(666);
 
-            Console.WriteLine(p.GetDatos());
+            if(p1 == p2 )
+            {
+                Console.WriteLine("SON IGUALES");
+            }
+            else {
+                Console.WriteLine("SON DISTINTOS");
+            }
+
+            Console.WriteLine(p1 + p2);//Ya esta encapsulada la logica cuando queremos sumar los legajos de ambos objetos
+            CD acdc = new CD(11);
+            acdc.titulo = "Back in black";
+            acdc.anio = 1980;
+
+            //Console.WriteLine(p.GetDatos());
+            Console.WriteLine(p1);
         }
     }
 }
